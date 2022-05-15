@@ -1,0 +1,145 @@
+/*maknuti nav, header, footer*/
+@media print{
+    body{
+        margin: 0;
+        color: black;
+        background-color: rgb(171, 171, 171);
+        display: block;
+        width: 100%;
+    }
+    header{
+        display: none;
+    }
+    .grid-kontenjer2{
+        display: none;
+    }
+    #pod{
+        display: none;
+    }
+    img{
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    @page:left{
+        margin: 0.5cm;
+    }
+    @page:right{
+        margin:0.5cm;
+    }
+    #tekst_index{
+    
+        height: auto;
+        padding: 3px;
+        box-shadow: inset 0 0 0 3px rgb(96, 96, 96);
+        overflow: auto;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        letter-spacing: 0.5px;
+        word-spacing: 3px;  
+    }
+
+    /*obrazac*/
+   
+    input:required{
+        border-color: rgb(21, 21, 21);
+    }
+    .obrazac1, #div_obrazac2, .obrazac2,#div_obrazac1{
+        width: auto;
+    }
+    .obrazac1{
+        float: left;
+    }
+    #div_obrazac2{
+        float:right;
+    }
+    #div_obrazac1{
+        float: left;
+    }
+
+    .gumbi{
+        display: none;
+    }
+    #lopta{
+        display: none;
+    }
+    [type="radio"], [type="range"]{
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+
+
+
+    /*multimedija*/
+   .span_slike_kontenjer{
+       display: none;
+   }
+   #Video, #Audio{
+       display: none;
+     }
+   #slike > br{
+       display: none;
+    }
+   .slike_multi{
+    width: 100%;
+    height: 200px;
+    }
+
+    .fig_slike{
+        width: 100%;
+        height: auto;
+    }
+    .fig_slike_text{
+        letter-spacing: 35px;
+    }
+    /*O autoru*/
+    ul{
+        list-style: none;
+    }
+
+    /*Popis*/
+    [src="pregled.html"]{
+        height: 500px;
+        border: 2px;
+    }
+    table{
+    
+        border-spacing: 0;
+        border: 2px solid #ddd;
+        border-collapse: collapse;
+        width: 100%;
+        height: 30px;
+        
+    }
+    th,td{
+        text-align: center;
+        border: 2px solid rgb(0, 27, 24);
+        
+    }
+
+    /*Kreativna*/
+
+    [class="navbar navbar-expand-lg bg-secondary navbar-dark"], .kreativna_footer+ footer{
+        display: none;
+    }
+    [class="text-warning"]{
+        -webkit-filter: grayscale(100%);
+
+    }
+
+
+    #tilda ~ li{ /* TILDA ~*/
+        color: black;
+     }
+     #plus + li > label{ /* PLUS  +*/
+         color: black;
+     }
+     #myRange2 + label{
+         color: black;
+     }
+     #myRange3 + label{
+         color: black;
+     }
+
+}
+
+

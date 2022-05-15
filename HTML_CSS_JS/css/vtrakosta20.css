@@ -1,0 +1,441 @@
+
+/* PSEUDOKLASE : :not , :hover , :required */
+
+* {
+    background-color:dimgray;
+    color: white;
+}
+/*Pozicioniranje i uređivanje elemenata hedera*/
+.spremiste{
+    position: relative;
+    
+}
+.naslov {
+   
+    text-align: center;
+    font-size:  50px;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+.logoStr{
+    position: absolute;
+    top: 30px;
+    left: 0%;
+    width: 80px;
+    height: 80px;
+}
+.prijava{
+    position: absolute;
+    top : 70px;
+    right: 0%;
+    
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+.grid-kontenjer2{/*Grid kontenjer za izbornik*/
+    display:grid;
+    grid-template-areas: 
+    
+        'pocetna obrazac kreativna multimedija o_autoru popis' ; 
+    /*background-color: cadetblue;
+    padding: 10px;*/
+}
+
+
+/*------------Pseudokalsa za hover izbornika--------*/
+#pocetna:hover{
+    background-color:rgb(68, 111, 112);
+    padding: 10px;
+}
+#obrazac:hover{
+    background-color:rgb(68, 111, 112);
+    padding: 10px;
+}
+#kreativna:hover:visited{
+    background-color:rgb(68, 111, 112);
+    padding: 10px;
+}
+#multimedija:hover{
+    background-color:rgb(68, 111, 112);
+    padding: 10px;
+}
+#autor:hover{
+    background-color:rgb(68, 111, 112);
+    padding: 10px;
+}
+#popis:hover{
+    background-color:rgb(68, 111, 112);
+    padding: 10px;
+}
+/*------Pozicioniranje izbornika pomocu grid-----*/
+.grid-item1{
+    
+    grid-area: pocetna;
+    padding: 10px;
+    text-align: center;
+    background-color: cadetblue;
+    font-size: 30px;
+}
+.grid-item2{
+    grid-area: obrazac; 
+    padding: 10px;
+    text-align: center;
+    background-color: cadetblue;
+    font-size: 30px;
+}
+.grid-item3{
+    grid-area: kreativna;
+    padding: 10px;
+    text-align: center;
+    background-color: cadetblue;
+    font-size: 30px;
+}
+.grid-item4{
+    grid-area: multimedija;
+    padding: 10px;
+    text-align: center;
+    background-color: cadetblue;
+    font-size: 30px;
+}
+.grid-item5{
+    grid-area: o_autoru;
+    padding: 10px;
+    text-align: center;
+    background-color: cadetblue;
+    font-size: 30px;
+}
+.grid-item6{
+    grid-area: popis;
+    padding: 10px;
+    text-align: center;
+    background-color: cadetblue;
+    font-size: 30px;
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*Tekst i slika na početnoj str*/
+#slika{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px; /*KUTIJA*/
+    border: 110px;
+    margin: auto;
+    
+
+}
+#tekst_index{
+    
+    height: 170px;
+    padding: 3px;
+    box-shadow: inset 0 0 0 3px lightGreen;
+    overflow: auto;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    letter-spacing: 0.5px;
+    word-spacing: 3px;  
+}
+canvas{
+    border: 2px solid black;
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+/*-------Skaliranje slika u footeru--------*/
+footer > a img { /*kompleksni dijeteta i roditelja*/
+    height: 50px;
+    width: 50px;
+}
+footer > a img:not(.val){/*:not pseudoklasa jedna*/
+    height: 50px;
+    width: 120px;
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*---ˇˇˇˇ----Pozicioniranje elemenata u footeru-----ˇˇˇˇ-----*/
+#pod{
+    position: relative;
+    display: grid;  
+}
+.cc{
+    position: relative;
+    left: 5px;
+}
+.sl{
+    position: relative;
+    left: 5px;
+    top:15px;
+}
+.strelica{
+    position: absolute;
+    left: 50%;
+    
+}
+.html_val{
+    position: absolute;
+    right: 10px;
+}
+.css_val2{
+    float: right;
+}
+
+.grid-kontenjerfooter{/*Grid kontenjer za izbornik*/
+    display:flex;
+    
+    
+        
+    /*background-color: cadetblue;
+    padding: 10px;*/
+}
+.val{
+    width: 50px;
+    height: 50px;
+    
+    
+}
+
+
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*-----ˇˇˇˇˇ---Postavljanje širine href atributa u footeru na veličinu ikone------*/
+
+footer > a.cc{
+    width: 100px;
+    height: 50px;
+}
+footer >a.strelica{
+    width: 50px;
+    height: 50px;
+}
+footer >a.html_val{
+    width: 50px;
+    height: 50px;
+}
+footer >a.css_val{
+    width: 50px;
+    height: 50px;
+    background-color: darkgray;
+}
+footer >p{
+    width: 180px;
+    height: 20px;
+}
+[class="opis"]{
+    width: 100px;
+    height: 20px;
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+
+
+/*-------ˇˇˇˇ---------Obrazac---------ˇˇˇˇ--------*/
+/*određivanje sirine ekrana i pozicioniranje obrazaca*/
+#centriraj{
+   display: flex;
+   align-items: center;
+    justify-content: center;
+}
+
+.obrazac1{
+    float: left;
+    width: 500px;
+    height: 680px;
+   
+}
+.obrazac2{
+    
+   
+    width: 500px;
+    height: 680px;
+    
+}
+#div_obrazac1{
+    float: left ;
+}
+#div_obrazac2{
+    float: right;
+    
+}
+.gumbi{
+    text-align: center;
+    
+}
+
+/*Uređivanje obrasca*/
+input:required{
+    border-color: red;
+}
+
+/*-------------MULTIMEDIJA--------------*/
+/*Animacija naslova "Slika,Video i Audio"*/
+.span_slike_kontenjer{
+    
+    display: table;
+    margin:1em auto;
+    font-size: 5px;
+}
+.span_centar{
+    display: table;
+
+}
+.span_centar > span{/*centriranje na ekranu*/
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+
+  .span_slike_kontenjer span {
+    font-size:3em;
+    color: cadetblue;
+    
+    background:#26372c;
+    display:table-cell;/*slaganje u tablicu za manipualciju*/
+    box-shadow:inset 0 0 5px rgba(0,0,0,0.3), 0 5px 0 #ccc;
+    padding: 0 15px;
+    line-height: 50px;
+    animation:jumb 4s infinite;
+  }
+  @keyframes jumb {
+    0% {
+      transform:translateY(0px)
+    }
+    50% {
+      transform:translateX(-20px);/*tranzicija u lijevo za 30px*/
+      box-shadow:0 10px 0 cadetblue;
+    }
+    100% {
+      transform:translateY(0px) 
+    }
+  }/*animacija za svako slovo*/
+  .span_slike_kontenjer span:nth-child(1) {
+    animation-delay:0s;
+  }
+  .span_slike_kontenjer span:nth-child(2) {
+    animation-delay:.1s;  
+  }
+  .span_slike_kontenjer span:nth-child(3) {
+    animation-delay:.2s;
+  }
+  .span_slike_kontenjer span:nth-child(4) {
+    animation-delay:.3s;  
+  }
+  .span_slike_kontenjer span:nth-child(5) {
+    animation-delay:.4s;
+  }
+
+  /*Uredivanje slika*/
+
+.slike_multi{
+    width: 200px;
+    height: 200px;
+    
+}
+#slike{
+    text-align: center; 
+    
+}
+
+/*Povecanje slike na hover*/
+.fig_slike{
+    
+    width: 200px;
+    height: auto;
+    margin: auto; /*Za postavljanje u sredinu ekrana*/
+    padding: 3px;
+    background-color: rgb(32, 82, 64);
+    transition: 2s;
+    
+}
+.fig_slike:hover{
+    transform: scale(1.5);
+    
+}
+
+
+.fig_slike_text{
+    padding: 3px;
+    width: auto;
+    background-color: rgb(32, 82, 64);
+}
+/* Uredivanje videa*/
+.video_multi{
+    width: 200px;
+    height: 200px; 
+}
+#Video{
+    text-align: center;
+}
+.video_multi:hover{
+    width: 500px;
+    height: 300px;
+}
+@media screen and (max-width: 500px){
+    .video_multi:hover{
+        width: 300px;
+        height: 300px;
+    }
+}
+/* AUDIO*/
+#Audio{
+    text-align:center;
+}
+
+
+
+/*---------------Popis.html---------------------------*/
+li > a{
+    color: rgb(127, 209, 236);
+}
+li >a:hover{
+    color: rgb(179, 0, 179);
+}
+.drugastr{
+    text-align: center;
+}
+
+/*tablica*/
+table{
+    
+    border-spacing: 0;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    width: 100%;
+    height: 30px;
+    
+}
+th,td{
+    text-align: center;
+    border: 1px solid rgb(0, 27, 24);
+    
+}
+
+.neparni >td, .neparni>th{
+    background-color: rgb(127, 209, 236);
+}
+.parni >td ,.parni>th{
+    background-color: rgb(42, 70, 80);
+}
+tr:hover > td, tr:hover > th{
+    background-color:cornflowerblue;
+    
+}
+/* O autoru*/
+main{
+    text-align: center;
+}
+
+#tilda ~ li{ /* TILDA ~*/
+   color: lightblue;
+}
+#plus + li > label{ /* PLUS  +*/
+    color: orange;
+}
+#myRange2 + label{
+    color: blue;
+}
+#myRange3 + label{
+    color: yellow;
+}

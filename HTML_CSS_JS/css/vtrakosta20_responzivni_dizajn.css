@@ -1,0 +1,200 @@
+@media screen and (max-width:900px) {
+    
+   
+
+    /*Index*/
+    #slika{
+        width: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
+@media screen and (max-width:700px) {
+    /*index*/
+    #slika{
+        width: 350px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*ZA obrasce*/
+    .obrazac1{
+        float: left;
+        width: 400px;
+        height: 680px;
+       
+    }
+    .obrazac2{
+        width: 400px;
+        height: 680px;
+        
+    }
+    #div_obrazac1{
+        float: left ;
+    }
+    #div_obrazac2{
+        float: right;
+        
+    }
+/********************************************************************************/
+/*POpis*/
+
+    .drugastr, [src="pregled.html"]{
+        text-align: center;
+        width: 450px;
+    }
+
+    /*tablica:*/
+
+
+
+
+}
+
+@media screen and (max-width:840px) {
+    
+    .grid-kontenjerfooter{/*Grid kontenjer za izbornik*/
+        display:grid;      
+        /*background-color: cadetblue;
+        padding: 10px;*/
+    }
+
+    caption, thead{
+        display: none;
+    }
+    .tablica, .tablica tbody, .tablica tr, .tablica td, .tablica th{
+        display: block;
+        width: 100%;
+    }
+
+    .tablica tr{
+        margin-bottom: 10px;
+    }
+    .tablica td{
+        text-align: right;
+        position: relative;
+    }
+    table td::before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    table{
+        border: 0px;
+        height: auto;
+    }
+    
+    #sakri1, #sakri2{
+        display: none;
+
+    }
+    .grid-kontenjer2{
+        display:grid;
+    grid-template-areas: 
+    'pocetna obrazac kreativna'
+    'multimedija o_autoru popis';
+}
+
+
+    
+}
+
+
+
+@media screen and (max-width:480px) {
+    /*Index*/
+    #slika{
+        width: 230px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+     /*ZA obrasce*/
+     .obrazac1{
+        float: left;
+        width: 350px;
+        height: 680px;
+       
+    }
+    .obrazac2{
+        width: 350px;
+        height: 680px;
+        
+    }
+    #div_obrazac1{
+        float: left ;
+    }
+    #div_obrazac2{
+        float: right;
+        
+    }
+/********************************************************************************/
+/* popis*/
+
+.drugastr, [src="pregled.html"]{
+    text-align: center;
+    width: 400px;
+}
+
+
+
+
+.grid-kontenjerfooter{/*Grid kontenjer za izbornik*/
+    display:grid;      
+    /*background-color: cadetblue;
+    padding: 10px;*/
+}
+
+caption, thead{
+    display: none;
+}
+.tablica, .tablica tbody, .tablica tr, .tablica td, .tablica th{
+    display: block;
+    width: 100%;
+}
+
+.tablica tr{
+    margin-bottom: 10px;
+}
+.tablica td{
+    text-align: right;
+    position: relative;
+}
+table td::before{
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+table{
+    border: 0px;
+    height: auto;
+}
+
+#sakri1, #sakri2{
+    display: none;
+
+}
+.grid-kontenjer2{
+    display:grid;
+grid-template-areas: 
+'pocetna obrazac kreativna'
+'multimedija o_autoru popis';
+}
+
+
+
+}
